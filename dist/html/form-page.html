@@ -12,11 +12,39 @@
     <link rel="stylesheet" href="../css/styles.css"/>
   </head>
   <body>
+    <div class="bg-wrapper"></div>
     <div class="layout-content">
-      <main id="main-content"></main>
+      <main id="main-content">
+        <div class="bg-form">
+          <div id="formValidator">
+            <div class="title text-center">
+              <h2>Become a DRK validator</h2>
+            </div>
+            <div class="form-content">
+              <div class="form-group">
+                <label class="validator-address">Validator's address:</label>
+                <p></p>
+              </div>
+              <div class="form-group">
+                <label class="amount d-block">Amount: </label>
+                <input type="number" value="0"/>
+              </div>
+              <div class="form-group">
+                <label class="amount d-block">Coinbase: </label>
+                <input type="text" value="0x0"/>
+              </div>
+              <div class="button-submit pt-3">
+                <button class="btn-form-submit" type="submit">SEND Tx</button>
+                <button class="btn-cancel" type="submit">CANCEL</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+<script src="../js/header.js"> </script>
   </body>
 </html>
