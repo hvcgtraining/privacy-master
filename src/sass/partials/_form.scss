@@ -1,0 +1,75 @@
+.bg-form{
+    width: 100vw;
+    height: 100vh;
+    background: #374049;
+}
+#formValidator{
+    position: fixed;
+    width: 450px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 30px 45px;
+    box-shadow: 0px 0px 4px 0 #d2d2d2;
+    .title{
+        h2{
+            font-size: 18px;
+            color: #374049; 
+        }
+        margin-bottom: 30px;
+    }
+    input{
+        box-shadow: 0px 1px 3px 0 #bdb9b9 !important;
+        padding-left: 10px; 
+        padding-right: 10px;
+        width: 100%;
+        color: rgb(175, 175, 175) !important;
+    }
+}
+.button-submit{
+    padding: 0 30px;
+    .btn-form-submit{
+        background: #305f65;
+        color: #fff;
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+        transition: all .3s ease;
+        &:hover,&:focus{
+            background: #3b737a;
+            transition: all .3s ease;
+        }
+        &:active{
+            background: #274e53;
+            transition: all .3s ease;
+        }
+    }
+    .btn-cancel{
+        margin: 15px 0;
+        background: #ffffff;
+        color: rgb(245, 79, 134);
+        width: 100%;
+        padding: 5px 0;
+        text-align: center;
+        transition: all .3s ease;
+        &:hover,&:focus{
+            outline: none;
+            background: #cfcfcf;
+            transition: all .3s ease;
+        }
+        &:active{
+            transition: all .3s ease;
+            background: #bebebe;
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    #formValidator{
+        width: 320px !important;
+        padding: 30px 15px;
+        font-size: 13px;
+    }
+}
