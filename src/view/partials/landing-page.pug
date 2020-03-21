@@ -4,7 +4,7 @@ mixin logo(url, name)
         img(src= url)
         p.logo-name= name
 
-.landing-page.row
+.landing-page.d-flex.flex-wrap
     .introduce.col-10.offset-1
         h1.heading DRK- The vital center of the DeFi platform
         p.introduce-content DRK is a decentralized platform for the existing financial sectors of the Draken Group's digital banking system. The goal of the DRK is to gather all the information stored in a decentralized authentic ledger and transform payment processes and financial procedures. As a result, payment becomes cheaper, more convenient, and more secure with a host of automation capabilities.
@@ -25,48 +25,51 @@ mixin logo(url, name)
                     h3.list-title The Applications layer
                     p.list-content The topmost layer is the Applications layer, which takes place outside of the blockchain. Different companies' systems can connect to DRK to make requests or access information. Accounting, auditing, taxes, debt collection, debt transfer and payment systems can all be linked.
         .platform-img.px-0.col-md-5.offset-md-1
-            img(src='../../src/img/DKKChain.png')
-    .associate.col-10.offset-1.px-0
-        h1.heading Associated Enterprises
-        .associate-logos
-            +logo('../../src/img/AFFINITY.png', 'AFFINITY')
-            +logo('../../src/img/ARCHSTONE.png', 'ARCHSTONE')
-            +logo('../../src/img/ASEMERA.png', 'ASEMERA')
-            +logo('../../src/img/ATLANTIC-PROPERTY.png', 'ATLANTIC PROPERTY')
-            +logo('../../src/img/CANYON.png', 'CANYON')
-            +logo('../../src/img/DCL.png', 'DCL')
-            +logo('../../src/img/DIGITAL-SOLUTIONS.png', 'DIGITAL SOLUTIONS')
-            +logo('../../src/img/ENERGY-FINANCIAL.png', 'ENERGY FINANCIAL')
-            +logo('../../src/img/FIDUCIARY.png', 'FIDUCIARY')
-            +logo('../../src/img/FINANCE-BROKERS.png', 'FINANCE BROKERS')
-            +logo('../../src/img/FINANCE-CLAIMS.png', 'FINANCE CLAIMS')
-            +logo('../../src/img/FIRST-FAIR.png', 'FIRST FAIR')
-            +logo('../../src/img/FLY-CREDIT.png', 'FLY CREDIT')
-            +logo('../../src/img/HELDER.png', 'HELDER')
-            +logo('../../src/img/HELM.png', 'HELM')
-            +logo('../../src/img/HLS.png', 'HLS')
-            +logo('../../src/img/iLOAN.png', 'iLOAN')
-            +logo('../../src/img/INFOTECH.png', 'INFOTECH')
-            +logo('../../src/img/LOWEL-FINANCE.png', 'LOWEL FINANCE.')
-            +logo('../../src/img/MACRO-FIN.png', 'MACRO FIN')
-            +logo('../../src/img/NEIGHTBORHOOD-LENDING.png', 'NEIGHTBORHOOD LENDING')
-            +logo('../../src/img/NET-CREDIT.png', 'NET CREDIT')
-            +logo('../../src/img/NORDCAP.png', 'NORDCAP')
-            +logo('../../src/img/NOTTINGHAM-ADVISORS.png', 'NOTTINGHAM ADVISORS')
-            +logo('../../src/img/ONELINE.png', 'ONELINE')
-            +logo('../../src/img/PHOENIX.png', 'PHOENIX')
-            +logo('../../src/img/PLURI-BROKERS.png', 'PLURI BROKERS')
-            +logo('../../src/img/PRAGMATIC-THINKING.png', 'PRAGMATIC THINKING')
-            +logo('../../src/img/REAL-TRACT.png', 'REALTRACT')
-            +logo('../../src/img/SANDESON.png', 'SANDESON')
-            +logo('../../src/img/SAUNDER-PROPERTIES.png', 'SAUNDER PROPERTIES')
-            +logo('../../src/img/SOUND-SHORE.png', 'SOUND SHORE')
-            +logo('../../src/img/STERLING-WEALTH.png', 'STERLING WEALTH')
-            +logo('../../src/img/TEJARA-OMLAT.png', 'TEJARA OMLAT')
-            +logo('../../src/img/TOWES-INSURANCE.png', 'TOWES INSURANCE')
-            +logo('../../src/img/VANTAGE.png', 'VANTAGE')
-            +logo('../../src/img/WHITESIDE.png', 'WHITESIDE')        
-    button.learn-more_btn.col-7.col-sm-6.col-md-5.col-lg-4.col-xl-3.mx-auto LEARN MORE ABOUT DRK
+            img(src='../../dist/assets/DKKChain.png')
+    .associate.px-0
+        .container
+            .wrapper-associate
+                h1.heading Associated Enterprises
+                .associate-logos
+                    +logo('../../dist/assets/AFFINITY.png', 'AFFINITY')
+                    +logo('../../dist/assets/ARCHSTONE.png', 'ARCHSTONE')
+                    +logo('../../dist/assets/ASEMERA.png', 'ASEMERA')
+                    +logo('../../dist/assets/ATLANTIC-PROPERTY.png', 'ATLANTIC PROPERTY')
+                    +logo('../../dist/assets/CANYON.png', 'CANYON')
+                    +logo('../../dist/assets/DCL.png', 'DCL')
+                    +logo('../../dist/assets/DIGITAL-SOLUTIONS.png', 'DIGITAL SOLUTIONS')
+                    +logo('../../dist/assets/ENERGY-FINANCIAL.png', 'ENERGY FINANCIAL')
+                    +logo('../../dist/assets/FIDUCIARY.png', 'FIDUCIARY')
+                    +logo('../../dist/assets/FINANCE-BROKERS.png', 'FINANCE BROKERS')
+                    +logo('../../dist/assets/FINANCE-CLAIMS.png', 'FINANCE CLAIMS')
+                    +logo('../../dist/assets/FIRST-FAIR.png', 'FIRST FAIR')
+                    +logo('../../dist/assets/FLY-CREDIT.png', 'FLY CREDIT')
+                    +logo('../../dist/assets/HELDER.png', 'HELDER')
+                    +logo('../../dist/assets/HELM.png', 'HELM')
+                    +logo('../../dist/assets/HLS.png', 'HLS')
+                    +logo('../../dist/assets/iLOAN.png', 'iLOAN')
+                    +logo('../../dist/assets/INFOTECH.png', 'INFOTECH')
+                    +logo('../../dist/assets/LOWEL-FINANCE.png', 'LOWEL FINANCE.')
+                    +logo('../../dist/assets/MACRO-FIN.png', 'MACRO FIN')
+                    +logo('../../dist/assets/NEIGHTBORHOOD-LENDING.png', 'NEIGHTBORHOOD LENDING')
+                    +logo('../../dist/assets/NET-CREDIT.png', 'NET CREDIT')
+                    +logo('../../dist/assets/NORDCAP.png', 'NORDCAP')
+                    +logo('../../dist/assets/NOTTINGHAM-ADVISORS.png', 'NOTTINGHAM ADVISORS')
+                    +logo('../../dist/assets/ONELINE.png', 'ONELINE')
+                    +logo('../../dist/assets/PHOENIX.png', 'PHOENIX')
+                    +logo('../../dist/assets/PLURI-BROKERS.png', 'PLURI BROKERS')
+                    +logo('../../dist/assets/PRAGMATIC-THINKING.png', 'PRAGMATIC THINKING')
+                    +logo('../../dist/assets/REAL-TRACT.png', 'REALTRACT')
+                    +logo('../../dist/assets/SANDESON.png', 'SANDESON')
+                    +logo('../../dist/assets/SAUNDER-PROPERTIES.png', 'SAUNDER PROPERTIES')
+                    +logo('../../dist/assets/SOUND-SHORE.png', 'SOUND SHORE')
+                    +logo('../../dist/assets/STERLING-WEALTH.png', 'STERLING WEALTH')
+                    +logo('../../dist/assets/TEJARA-OMLAT.png', 'TEJARA OMLAT')
+                    +logo('../../dist/assets/TOWES-INSURANCE.png', 'TOWES INSURANCE')
+                    +logo('../../dist/assets/VANTAGE.png', 'VANTAGE')
+                    +logo('../../dist/assets/WHITESIDE.png', 'WHITESIDE')    
+            .btn-learn-more_btn.text-center
+                button.learn-more_btn.mx-auto LEARN MORE ABOUT DRK
 
 
 

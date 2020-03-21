@@ -12,10 +12,90 @@
     <link rel="stylesheet" href="../css/styles.css"/>
   </head>
   <body>
+    <div class="bg-wrapper"></div>
     <div class="layout-content">
-      <section></section>
+      <section>
+        <div id="header">
+          <div class="bg-header bg-header-index">
+            <div class="bg-img-header-index"></div>
+            <div class="menu-header pt-3">
+              <ul class="menu-main">
+                <li class="menu-main-item mx-3"><a class="menu-main-item-content" href="#">
+                    DRK CHAIN<i class="fas fa-sort-down px-2"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="./form-page.html">Form</a></li>
+                    <li class="sub-menu-item"><a href="./gas-station-page.html">Gas station</a></li>
+                    <li class="sub-menu-item"><a href="./privacy-management.html">Privacy management</a></li>
+                    <li class="sub-menu-item"><a href="./public-network-page.html">Public network</a></li>
+                  </ul>
+                </li>
+                <li class="menu-main-item mx-3"><a class="menu-main-item-content" href="#">
+                    JOHN<i class="fas fa-sort-down px-2"></i></a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="#">Sale</a></li>
+                    <li class="sub-menu-item"><a href="#">Exchange</a></li>
+                    <li class="sub-menu-item"><a href="#">Play</a></li>
+                  </ul>
+                </li>
+                <li class="menu-main-item mx-3"><a class="logo" href="./landing-page.html"><img src="../../dist/assets/logo.png" alt=""/></a></li>
+                <li class="menu-main-item mx-3"><a class="menu-main-item-content menu-icon" href="#">ANNOUNCE<img src="../../dist/assets/icon-announce.png"/></a></li>
+                <li class="menu-main-item mx-3"><a class="menu-main-item-content menu-icon" href="#">BUILD<img src="../../dist/assets/icon-github.png"/></a></li>
+              </ul>
+            </div>
+            <div class="menu-mobile"><a href="./landing-page.html">
+                <div class="logo"><img src="../../dist/assets/logo.png" alt=""/></div></a>
+              <button id="btn-menu-mobile"><i class="fas fa-bars"></i></button>
+              <div class="menu-mobile-widget">
+                <div class="d-block text-center"><a href="#">
+                    <div class="logo logo-mobile"><img src="../../dist/assets/logo.png" alt=""/></div>
+                    <button id="btn-close-menu-mobile"><i class="fas fa-times"></i></button></a></div>
+                <div class="menu-content mt-3">
+                  <ul class="menu-list-mobile">
+                    <div class="nav-box">
+                      <li class="sidebar-item"><a href="#">
+                          DRK CHAIN<i class="fas fa-sort-down px-2"></i></a></li>
+                      <ul class="sibar-menu-sub-1 px-2">
+                        <div class="nav-box-1">
+                          <li class="sidebar-item"><a href="./form-page.html">Form</a></li>
+                          <li class="sidebar-item"><a href="./gas-station-page.html">Gas station</a></li>
+                          <li class="sidebar-item"><a href="./privacy-management.html">Privacy management</a></li>
+                          <li class="sidebar-item"><a href="./public-network-page.html">Public network</a></li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="nav-box">
+                      <li class="sidebar-item"><a href="#">
+                          JOIN<i class="fas fa-sort-down px-2"></i></a></li>
+                      <ul class="sibar-menu-sub-1 px-2">
+                        <div class="nav-box-1">
+                          <li class="sidebar-item"><a href="#">Sale</a></li>
+                          <li class="sidebar-item"><a href="#">Exchange        </a></li>
+                          <li class="sidebar-item"><a href="#">Play</a></li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="nav-box">
+                      <li class="sidebar-item"><a href="#">ANNOUNCE<img src="../../dist/assets/icon-announce.png"/></a></li>
+                    </div>
+                    <div class="nav-box">
+                      <li class="sidebar-item"><a href="#"> BUILD<img src="../../dist/assets/icon-github.png"/></a></li>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="learn-more">
+              <div class="title-learn-more">
+                <h2>DRK         </h2><span class="line"> </span>
+              </div>
+              <div class="content-learn-more"><strong class="txt-learn-more">The Fourth Generation of Blockchain… in Decentralized Finance </strong></div>
+              <button class="btn-learn-more mt-3">LEARN MORE ABOUT OUR BUSSINESS</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <main id="main-content">
-        <div class="landing-page row">
+        <div class="landing-page d-flex flex-wrap">
           <div class="introduce col-10 offset-1">
             <h1 class="heading">DRK- The vital center of the DeFi platform</h1>
             <p class="introduce-content">DRK is a decentralized platform for the existing financial sectors of the Draken Group's digital banking system. The goal of the DRK is to gather all the information stored in a decentralized authentic ledger and transform payment processes and financial procedures. As a result, payment becomes cheaper, more convenient, and more secure with a host of automation capabilities.<br/><br/>It focuses on security, fast transaction efficiency and many of the latest decentralized technologies in the decentralized finance sector to create an all-in-one platform in the Draken Group system and the global financial industry.</p>
@@ -38,131 +118,166 @@
                 </li>
               </ol>
             </div>
-            <div class="platform-img px-0 col-md-5 offset-md-1"><img src="../../src/img/DKKChain.png"/></div>
+            <div class="platform-img px-0 col-md-5 offset-md-1"><img src="../../dist/assets/DKKChain.png"/></div>
           </div>
-          <div class="associate col-10 offset-1 px-0">
-            <h1 class="heading">Associated Enterprises</h1>
-            <div class="associate-logos">
-                      <div class="logo text-center"><img src="../../src/img/AFFINITY.png"/>
-                        <p class="logo-name">AFFINITY</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/ARCHSTONE.png"/>
-                        <p class="logo-name">ARCHSTONE</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/ASEMERA.png"/>
-                        <p class="logo-name">ASEMERA</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/ATLANTIC-PROPERTY.png"/>
-                        <p class="logo-name">ATLANTIC PROPERTY</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/CANYON.png"/>
-                        <p class="logo-name">CANYON</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/DCL.png"/>
-                        <p class="logo-name">DCL</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/DIGITAL-SOLUTIONS.png"/>
-                        <p class="logo-name">DIGITAL SOLUTIONS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/ENERGY-FINANCIAL.png"/>
-                        <p class="logo-name">ENERGY FINANCIAL</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/FIDUCIARY.png"/>
-                        <p class="logo-name">FIDUCIARY</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/FINANCE-BROKERS.png"/>
-                        <p class="logo-name">FINANCE BROKERS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/FINANCE-CLAIMS.png"/>
-                        <p class="logo-name">FINANCE CLAIMS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/FIRST-FAIR.png"/>
-                        <p class="logo-name">FIRST FAIR</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/FLY-CREDIT.png"/>
-                        <p class="logo-name">FLY CREDIT</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/HELDER.png"/>
-                        <p class="logo-name">HELDER</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/HELM.png"/>
-                        <p class="logo-name">HELM</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/HLS.png"/>
-                        <p class="logo-name">HLS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/iLOAN.png"/>
-                        <p class="logo-name">iLOAN</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/INFOTECH.png"/>
-                        <p class="logo-name">INFOTECH</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/LOWEL-FINANCE.png"/>
-                        <p class="logo-name">LOWEL FINANCE.</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/MACRO-FIN.png"/>
-                        <p class="logo-name">MACRO FIN</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/NEIGHTBORHOOD-LENDING.png"/>
-                        <p class="logo-name">NEIGHTBORHOOD LENDING</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/NET-CREDIT.png"/>
-                        <p class="logo-name">NET CREDIT</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/NORDCAP.png"/>
-                        <p class="logo-name">NORDCAP</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/NOTTINGHAM-ADVISORS.png"/>
-                        <p class="logo-name">NOTTINGHAM ADVISORS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/ONELINE.png"/>
-                        <p class="logo-name">ONELINE</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/PHOENIX.png"/>
-                        <p class="logo-name">PHOENIX</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/PLURI-BROKERS.png"/>
-                        <p class="logo-name">PLURI BROKERS</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/PRAGMATIC-THINKING.png"/>
-                        <p class="logo-name">PRAGMATIC THINKING</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/REAL-TRACT.png"/>
-                        <p class="logo-name">REALTRACT</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/SANDESON.png"/>
-                        <p class="logo-name">SANDESON</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/SAUNDER-PROPERTIES.png"/>
-                        <p class="logo-name">SAUNDER PROPERTIES</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/SOUND-SHORE.png"/>
-                        <p class="logo-name">SOUND SHORE</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/STERLING-WEALTH.png"/>
-                        <p class="logo-name">STERLING WEALTH</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/TEJARA-OMLAT.png"/>
-                        <p class="logo-name">TEJARA OMLAT</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/TOWES-INSURANCE.png"/>
-                        <p class="logo-name">TOWES INSURANCE</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/VANTAGE.png"/>
-                        <p class="logo-name">VANTAGE</p>
-                      </div>
-                      <div class="logo text-center"><img src="../../src/img/WHITESIDE.png"/>
-                        <p class="logo-name">WHITESIDE</p>
-                      </div>
+          <div class="associate px-0">
+            <div class="container">
+              <div class="wrapper-associate">
+                <h1 class="heading">Associated Enterprises</h1>
+                <div class="associate-logos">
+                          <div class="logo text-center"><img src="../../dist/assets/AFFINITY.png"/>
+                            <p class="logo-name">AFFINITY</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/ARCHSTONE.png"/>
+                            <p class="logo-name">ARCHSTONE</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/ASEMERA.png"/>
+                            <p class="logo-name">ASEMERA</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/ATLANTIC-PROPERTY.png"/>
+                            <p class="logo-name">ATLANTIC PROPERTY</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/CANYON.png"/>
+                            <p class="logo-name">CANYON</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/DCL.png"/>
+                            <p class="logo-name">DCL</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/DIGITAL-SOLUTIONS.png"/>
+                            <p class="logo-name">DIGITAL SOLUTIONS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/ENERGY-FINANCIAL.png"/>
+                            <p class="logo-name">ENERGY FINANCIAL</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/FIDUCIARY.png"/>
+                            <p class="logo-name">FIDUCIARY</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/FINANCE-BROKERS.png"/>
+                            <p class="logo-name">FINANCE BROKERS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/FINANCE-CLAIMS.png"/>
+                            <p class="logo-name">FINANCE CLAIMS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/FIRST-FAIR.png"/>
+                            <p class="logo-name">FIRST FAIR</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/FLY-CREDIT.png"/>
+                            <p class="logo-name">FLY CREDIT</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/HELDER.png"/>
+                            <p class="logo-name">HELDER</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/HELM.png"/>
+                            <p class="logo-name">HELM</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/HLS.png"/>
+                            <p class="logo-name">HLS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/iLOAN.png"/>
+                            <p class="logo-name">iLOAN</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/INFOTECH.png"/>
+                            <p class="logo-name">INFOTECH</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/LOWEL-FINANCE.png"/>
+                            <p class="logo-name">LOWEL FINANCE.</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/MACRO-FIN.png"/>
+                            <p class="logo-name">MACRO FIN</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/NEIGHTBORHOOD-LENDING.png"/>
+                            <p class="logo-name">NEIGHTBORHOOD LENDING</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/NET-CREDIT.png"/>
+                            <p class="logo-name">NET CREDIT</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/NORDCAP.png"/>
+                            <p class="logo-name">NORDCAP</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/NOTTINGHAM-ADVISORS.png"/>
+                            <p class="logo-name">NOTTINGHAM ADVISORS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/ONELINE.png"/>
+                            <p class="logo-name">ONELINE</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/PHOENIX.png"/>
+                            <p class="logo-name">PHOENIX</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/PLURI-BROKERS.png"/>
+                            <p class="logo-name">PLURI BROKERS</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/PRAGMATIC-THINKING.png"/>
+                            <p class="logo-name">PRAGMATIC THINKING</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/REAL-TRACT.png"/>
+                            <p class="logo-name">REALTRACT</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/SANDESON.png"/>
+                            <p class="logo-name">SANDESON</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/SAUNDER-PROPERTIES.png"/>
+                            <p class="logo-name">SAUNDER PROPERTIES</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/SOUND-SHORE.png"/>
+                            <p class="logo-name">SOUND SHORE</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/STERLING-WEALTH.png"/>
+                            <p class="logo-name">STERLING WEALTH</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/TEJARA-OMLAT.png"/>
+                            <p class="logo-name">TEJARA OMLAT</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/TOWES-INSURANCE.png"/>
+                            <p class="logo-name">TOWES INSURANCE</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/VANTAGE.png"/>
+                            <p class="logo-name">VANTAGE</p>
+                          </div>
+                          <div class="logo text-center"><img src="../../dist/assets/WHITESIDE.png"/>
+                            <p class="logo-name">WHITESIDE</p>
+                          </div>
+                </div>
+              </div>
+              <div class="btn-learn-more_btn text-center">
+                <button class="learn-more_btn mx-auto">LEARN MORE ABOUT DRK</button>
+              </div>
             </div>
           </div>
-          <button class="learn-more_btn col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 mx-auto">LEARN MORE ABOUT DRK</button>
         </div>
       </main>
-      <section></section>
+      <div id="footer">
+        <div class="bg-footer">
+          <div class="container px-0 pos-backtotop">
+            <div class="footer-top bg-white py-3">
+              <div class="icon-contact"><a class="mx-2" href="#"><img src="../../dist/assets/icon-1.png"/></a><a class="mx-2" href="#"><img src="../../dist/assets/icon-2.png"/></a><a class="mx-2" href="#"><img src="../../dist/assets/icon-3.png"/></a></div>
+              <div class="content-contact">
+                <div class="txt-contact">
+                  <div class="tilte"><strong>Email:</strong></div>
+                  <div class="main-txt pl-1">
+                    <p class="m-0">contact@draken.tech</p>
+                  </div>
+                </div>
+                <div class="txt-contact">
+                  <div class="tilte"><strong>Address:</strong></div>
+                  <div class="main-txt pl-1">
+                    <p class="m-0">Fritz-Heeb-Weg 1, 8050 Zürich, Switzerland</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom bg-white py-3">
+              <div class="footer-bottom_content w-100 text-center"><span>© 2019 Draken Tech, Inc. All rights reserved.</span></div>
+            </div>
+            <button id="btn-backtotop"><img src="../../dist/assets/backtotop.png"/></button>
+          </div>
+        </div>
+      </div>
     </div><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0=" crossorigin="anonymous"></script>
+<script src="../js/header.js"> </script>
+<script src="../js/main.js"> </script>
+<script src="../js/privacy.js"> </script>
   </body>
 </html>
