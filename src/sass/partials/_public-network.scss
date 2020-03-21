@@ -125,5 +125,13 @@
     }
 }
 
+@media only screen and (max-width: 320px) {
+    .container.table-custom {
+        .btn-validator {
+            float: none;
+        }
+    }
+}
+
 
 
