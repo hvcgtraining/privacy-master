@@ -477,10 +477,10 @@ input {
   position: fixed;
   left: 0;
   top: 0;
-  background: -webkit-radial-gradient(circle, #5a5996 0%, #a5bacc 100%);
-  background: -moz-radial-gradient(circle, #5a5996 0%, #a5bacc 100%);
-  background: -o-radial-gradient(circle, #5a5996 0%, #a5bacc 100%);
-  background: radial-gradient(circle, #5a5996 0%, #a5bacc 100%); }
+  background-image: -webkit-linear-gradient(315deg, #74c2f5 0%, #8288ff 100%);
+  background-image: -moz-linear-gradient(315deg, #74c2f5 0%, #8288ff 100%);
+  background-image: -o-linear-gradient(315deg, #74c2f5 0%, #8288ff 100%);
+  background-image: linear-gradient(135deg, #74c2f5 0%, #8288ff 100%); }
 
 .nav-box {
   padding: 5px 15px; }
