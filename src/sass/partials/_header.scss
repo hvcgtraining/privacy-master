@@ -63,9 +63,9 @@
         }
         &:hover,&:active{
             .menu-main-item-content{
-                color: rgb(241, 234, 192);
+                color: #ffeb76;
                 img{
-                    color: rgb(241, 234, 192);
+                    color: #ffeb76;
                 }
             }
             .sub-menu{
@@ -121,7 +121,7 @@
         color: #fff;
         transition: all .3s ease;
         &:hover,&:active{
-            color: rgb(241, 234, 192);
+            color: #ffeb76;
             transition: all .3s ease;
         }
     }

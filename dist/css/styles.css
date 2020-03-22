@@ -419,9 +419,9 @@ input {
       -moz-transition: all .3s ease;
       transition: all .3s ease; }
     .menu-header .menu-main-item:hover .menu-main-item-content, .menu-header .menu-main-item:active .menu-main-item-content {
-      color: #f1eac0; }
+      color: #ffeb76; }
       .menu-header .menu-main-item:hover .menu-main-item-content img, .menu-header .menu-main-item:active .menu-main-item-content img {
-        color: #f1eac0; }
+        color: #ffeb76; }
     .menu-header .menu-main-item:hover .sub-menu, .menu-header .menu-main-item:active .sub-menu {
       opacity: 1;
       pointer-events: auto;
@@ -491,7 +491,7 @@ input {
     -moz-transition: all .3s ease;
     transition: all .3s ease; }
     .nav-box a:hover, .nav-box a:active {
-      color: #f1eac0;
+      color: #ffeb76;
       -webkit-transition: all .3s ease;
       -o-transition: all .3s ease;
       -moz-transition: all .3s ease;
