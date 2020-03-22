@@ -1,5 +1,6 @@
 .container#privacy-management.table-custom
-    h2 Privacy DRK Token Management
+    .privacy-title.d-flex.flex-wrap.align-items-center.justify-content-between.pb-2
+        h2 Privacy DRK Token Management
         .btn.btn-copy Copy your privacy receiving key
     table.privacy-table
         thead
@@ -39,7 +40,7 @@
                 a(href="#tab-transfer-history") Transfer History
         .tab-content
             .tab-item#tab-drk-coin
-                .item-tab-content 
+                .item-tab-content.py-3.px-2 
                     table.tab-table
                         tbody
                             tr
@@ -50,77 +51,80 @@
                                 td.w80  0
                             tr
                                 td.w20  Amount You Want To Get
-                                td.w80  
-                                    input(type="text", name="" value="0").input-text
-                                    .btn.btn-convert.uppercase conver drk to erc20 token
-                                    .btn.btn-convert-2.uppercase conver erc20 to drk token
+                                td.w-100.d-flex.flex-wrap.align-items-center
+                                    input(type="text", name="" value="0" style="height:fit-content").input-text.my-1
+                                    .btn-function.my-1
+                                        .btn.btn-convert.uppercase.my-2(style="padding: 2px 25px")  conver drk to erc20 token
+                                        .btn.btn-convert-2.uppercase.my-2(style="padding: 2px 25px")  conver erc20 to drk token
                     .long-text
             .tab-item#tab-erc20-2privacy 
-               .item-tab-content 
+                .item-tab-content.py-3.px-2 
                     table.tab-table
                         tbody
                             tr
-                                td.w20  Your ERC20 Token Address
-                                td.w80  loading
-                            tr
-                                td.w20  Current ERC20 Token Balance
-                                td.w80  0
-                            tr
-                                td.w20  Amount You Want To Get
-                                td.w80  
-                                    input(type="text", name="" value="0").input-text
-                                    .btn.btn-convert.uppercase conver drk to erc20 token
-                                    .btn.btn-convert-2.uppercase conver erc20 to drk token
+                                td.w20  Amount
+                                td.w80.d-lex.flex-wrap  
+                                    input(type="number", name="" value="0").input-text
+                                    .btn.btn-convert.uppercase(style="padding: 2px 25px") conver erc20 to drk token
                     .long-text
             .tab-item#tab-privacy-2erc20 
-                .item-tab-content 
+                .item-tab-content.py-3.px-2 
                     table.tab-table
                         tbody
                             tr
-                                td.w20  Your ERC20 Token Address
-                                td.w80  loading
-                            tr
-                                td.w20  Current ERC20 Token Balance
-                                td.w80  0
-                            tr
-                                td.w20  Amount You Want To Get
-                                td.w80  
-                                    input(type="text", name="" value="0").input-text
-                                    .btn.btn-convert.uppercase conver drk to erc20 token
-                                    .btn.btn-convert-2.uppercase conver erc20 to drk token
+                                td.w20  Amount
+                                td.w80.d-lex.flex-wrap  
+                                    input(type="number", name="" value="0").input-text
+                                    .btn.btn-convert.uppercase(style="padding: 2px 25px") conver privacy to erc20 token
                     .long-text
             .tab-item#tab-privacy-transfer 
-                .item-tab-content 
+                .item-tab-content.py-3.px-2 
                     table.tab-table
                         tbody
                             tr
-                                td.w20  Your ERC20 Token Address
-                                td.w80  loading
-                            tr
-                                td.w20  Current ERC20 Token Balance
-                                td.w80  0
-                            tr
-                                td.w20  Amount You Want To Get
-                                td.w80  
+                                td.w20  Privacy Token Amount to Transfer
+                                td.w80
                                     input(type="text", name="" value="0").input-text
-                                    .btn.btn-convert.uppercase conver drk to erc20 token
-                                    .btn.btn-convert-2.uppercase conver erc20 to drk token
+
+                            tr
+                                td.w20  Receiver's Privacy receiving Key
+                                td.w80  
+                                    input(type="text", name="" placeholder="Paste the address here").input-text
+                                    .btn.btn-convert.uppercase(style="padding: 2px 25px") conver privacy to erc20 token
+
                     .long-text
             .tab-item#tab-transfer-history 
-                .item-tab-content 
-                    table.tab-table
+                .history-title.d-flex.flex-wrap.align-items-center.justify-content-between.p-2
+                    h2 Upspent Notes (Privacy Tokens You Can Transfer)
+                    a(href="#")#reload-history ⟳ Reload history
+                .item-tab-content.py-3.px-2 
+                    table.privacy-table.no-data
+                        thead
+                            tr
+                                th  NoteHash
+                                th  Value
+                                th  Status
+                                th  Block
+                                th  TxHash
                         tbody
                             tr
-                                td.w20  Your ERC20 Token Address
-                                td.w80  loading
+                                td(colspan="5").text-center 
+                                    img.d-block.m-auto(src="../../dist/assets/not-data.png")
+                                    span No data available
+                .history-title.d-flex.flex-wrap.align-items-center.justify-content-between.p-2
+                    h2 Spent Notes (Privacy Tokens You Have Transfer)
+                .item-tab-content.py-3.px-2 
+                    table.privacy-table.no-data
+                        thead
                             tr
-                                td.w20  Current ERC20 Token Balance
-                                td.w80  0
+                                th  NoteHash
+                                th  Value
+                                th  Status
+                                th  Block
+                                th  TxHash
+                        tbody
                             tr
-                                td.w20  Amount You Want To Get
-                                td.w80  
-                                    input(type="text", name="" value="0").input-text
-                                    .btn.btn-convert.uppercase conver drk to erc20 token
-                                    .btn.btn-convert-2.uppercase conver erc20 to drk token
-                    .long-text
+                                td(colspan="5").text-center 
+                                    img.d-block.m-auto(src="../../dist/assets/not-data.png")
+                                    span No data available
             

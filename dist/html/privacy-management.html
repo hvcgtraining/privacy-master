@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title><link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap" rel="stylesheet">
+    <title>Document</title><link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -89,9 +89,10 @@
       </section>
       <main id="main-content">
         <div class="container table-custom" id="privacy-management">
-          <h2>Privacy DRK Token Management
+          <div class="privacy-title d-flex flex-wrap align-items-center justify-content-between pb-2">
+            <h2>Privacy DRK Token Management</h2>
             <div class="btn btn-copy">Copy your privacy receiving key</div>
-          </h2>
+          </div>
           <table class="privacy-table">
             <thead>
               <tr>
@@ -136,7 +137,7 @@
             </ul>
             <div class="tab-content">
               <div class="tab-item" id="tab-drk-coin">
-                <div class="item-tab-content"> 
+                <div class="item-tab-content py-3 px-2"> 
                   <table class="tab-table">
                     <tbody>
                       <tr>
@@ -149,10 +150,12 @@
                       </tr>
                       <tr>
                         <td class="w20"> Amount You Want To Get</td>
-                        <td class="w80"> 
-                          <input class="input-text" type="text" name="" value="0"/>
-                          <div class="btn btn-convert uppercase">conver drk to erc20 token</div>
-                          <div class="btn btn-convert-2 uppercase">conver erc20 to drk token</div>
+                        <td class="w-100 d-flex flex-wrap align-items-center">
+                          <input class="input-text my-1" type="text" name="" value="0" style="height:fit-content"/>
+                          <div class="btn-function my-1">
+                            <div class="btn btn-convert uppercase my-2" style="padding: 2px 25px"> conver drk to erc20 token</div>
+                            <div class="btn btn-convert-2 uppercase my-2" style="padding: 2px 25px"> conver erc20 to drk token</div>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -161,23 +164,14 @@
                 </div>
               </div>
               <div class="tab-item" id="tab-erc20-2privacy"> 
-                <div class="item-tab-content"> 
+                <div class="item-tab-content py-3 px-2"> 
                   <table class="tab-table">
                     <tbody>
                       <tr>
-                        <td class="w20"> Your ERC20 Token Address</td>
-                        <td class="w80"> loading</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Current ERC20 Token Balance</td>
-                        <td class="w80"> 0</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Amount You Want To Get</td>
-                        <td class="w80"> 
-                          <input class="input-text" type="text" name="" value="0"/>
-                          <div class="btn btn-convert uppercase">conver drk to erc20 token</div>
-                          <div class="btn btn-convert-2 uppercase">conver erc20 to drk token</div>
+                        <td class="w20"> Amount</td>
+                        <td class="w80 d-lex flex-wrap"> 
+                          <input class="input-text" type="number" name="" value="0"/>
+                          <div class="btn btn-convert uppercase" style="padding: 2px 25px">conver erc20 to drk token</div>
                         </td>
                       </tr>
                     </tbody>
@@ -186,23 +180,14 @@
                 </div>
               </div>
               <div class="tab-item" id="tab-privacy-2erc20"> 
-                <div class="item-tab-content"> 
+                <div class="item-tab-content py-3 px-2"> 
                   <table class="tab-table">
                     <tbody>
                       <tr>
-                        <td class="w20"> Your ERC20 Token Address</td>
-                        <td class="w80"> loading</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Current ERC20 Token Balance</td>
-                        <td class="w80"> 0</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Amount You Want To Get</td>
-                        <td class="w80"> 
-                          <input class="input-text" type="text" name="" value="0"/>
-                          <div class="btn btn-convert uppercase">conver drk to erc20 token</div>
-                          <div class="btn btn-convert-2 uppercase">conver erc20 to drk token</div>
+                        <td class="w20"> Amount</td>
+                        <td class="w80 d-lex flex-wrap"> 
+                          <input class="input-text" type="number" name="" value="0"/>
+                          <div class="btn btn-convert uppercase" style="padding: 2px 25px">conver privacy to erc20 token</div>
                         </td>
                       </tr>
                     </tbody>
@@ -211,23 +196,20 @@
                 </div>
               </div>
               <div class="tab-item" id="tab-privacy-transfer"> 
-                <div class="item-tab-content"> 
+                <div class="item-tab-content py-3 px-2"> 
                   <table class="tab-table">
                     <tbody>
                       <tr>
-                        <td class="w20"> Your ERC20 Token Address</td>
-                        <td class="w80"> loading</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Current ERC20 Token Balance</td>
-                        <td class="w80"> 0</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Amount You Want To Get</td>
-                        <td class="w80"> 
+                        <td class="w20"> Privacy Token Amount to Transfer</td>
+                        <td class="w80">
                           <input class="input-text" type="text" name="" value="0"/>
-                          <div class="btn btn-convert uppercase">conver drk to erc20 token</div>
-                          <div class="btn btn-convert-2 uppercase">conver erc20 to drk token</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w20"> Receiver's Privacy receiving Key</td>
+                        <td class="w80"> 
+                          <input class="input-text" type="text" name="" placeholder="Paste the address here"/>
+                          <div class="btn btn-convert uppercase" style="padding: 2px 25px">conver privacy to erc20 token</div>
                         </td>
                       </tr>
                     </tbody>
@@ -236,28 +218,47 @@
                 </div>
               </div>
               <div class="tab-item" id="tab-transfer-history"> 
-                <div class="item-tab-content"> 
-                  <table class="tab-table">
+                <div class="history-title d-flex flex-wrap align-items-center justify-content-between p-2">
+                  <h2>Upspent Notes (Privacy Tokens You Can Transfer)</h2><a href="#" id="reload-history">⟳ Reload history</a>
+                </div>
+                <div class="item-tab-content py-3 px-2"> 
+                  <table class="privacy-table no-data">
+                    <thead>
+                      <tr>
+                        <th> NoteHash</th>
+                        <th> Value</th>
+                        <th> Status</th>
+                        <th> Block</th>
+                        <th> TxHash</th>
+                      </tr>
+                    </thead>
                     <tbody>
                       <tr>
-                        <td class="w20"> Your ERC20 Token Address</td>
-                        <td class="w80"> loading</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Current ERC20 Token Balance</td>
-                        <td class="w80"> 0</td>
-                      </tr>
-                      <tr>
-                        <td class="w20"> Amount You Want To Get</td>
-                        <td class="w80"> 
-                          <input class="input-text" type="text" name="" value="0"/>
-                          <div class="btn btn-convert uppercase">conver drk to erc20 token</div>
-                          <div class="btn btn-convert-2 uppercase">conver erc20 to drk token</div>
-                        </td>
+                        <td class="text-center" colspan="5"> <img class="d-block m-auto" src="../../dist/assets/not-data.png"/><span>No data available</span></td>
                       </tr>
                     </tbody>
                   </table>
-                  <div class="long-text"></div>
+                </div>
+                <div class="history-title d-flex flex-wrap align-items-center justify-content-between p-2">
+                  <h2>Spent Notes (Privacy Tokens You Have Transfer)</h2>
+                </div>
+                <div class="item-tab-content py-3 px-2"> 
+                  <table class="privacy-table no-data">
+                    <thead>
+                      <tr>
+                        <th> NoteHash</th>
+                        <th> Value</th>
+                        <th> Status</th>
+                        <th> Block</th>
+                        <th> TxHash</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center" colspan="5"> <img class="d-block m-auto" src="../../dist/assets/not-data.png"/><span>No data available</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

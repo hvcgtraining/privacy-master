@@ -14,7 +14,7 @@ td,
 th,
 input,
 button {
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-family: 'Baloo Chettan 2', cursive;
   line-height: 1.5;
   font-weight: 300;
   font-size: 1rem;
@@ -980,7 +980,9 @@ input {
     width: 100%; }
   .container.table-custom .btn-copy {
     background-color: #2e5f66;
-    max-width: 250px; }
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content; }
   .container.table-custom h2 {
     padding: 15px 0;
     display: -webkit-box;
@@ -1005,7 +1007,8 @@ input {
       overflow-x: auto;
       border-bottom: 1px solid #ccc; }
     .container.table-custom .tab-wrapper a {
-      color: #333; }
+      color: #333;
+      padding: 5px 15px; }
     .container.table-custom .tab-wrapper li {
       padding-left: 20px;
       white-space: nowrap; }
@@ -1020,8 +1023,8 @@ input {
       .container.table-custom .tab-wrapper .tab-table tbody tr:nth-child(even) {
         background-color: #fff; }
     .container.table-custom .tab-wrapper .input-text {
-      max-width: 250px;
-      border: 1px solid #333 !important;
+      width: 350px;
+      border: 1px solid #cccbcb !important;
       padding: 3px;
       margin-right: 10px; }
     .container.table-custom .tab-wrapper .uppercase {
@@ -1044,20 +1047,37 @@ input {
 
 @media (max-width: 992px) {
   .container#privacy-management .input-text {
-    min-width: 500px;
     margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
   .container#privacy-management .input-text {
-    min-width: 500px;
+    width: 200px;
     margin-bottom: 15px; }
   .container#privacy-management h2 {
     font-size: 20px !important; }
-  .container#privacy-management .input-text {
-    min-width: 250px;
-    margin-bottom: 15px; }
   .container#privacy-management .btn-convert {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px;
+    font-size: 12px; }
+  .container#privacy-management .btn-convert-2 {
+    margin-bottom: 10px;
+    font-size: 12px; } }
+
+.privacy-table.no-data {
+  min-height: 300px;
+  overflow: hidden;
+  overflow-x: auto; }
+
+#tab-transfer-history .item-tab-content {
+  overflow: hidden;
+  overflow-x: auto; }
+
+.history-title h2 {
+  font-size: 16px; }
+
+#reload-history {
+  color: #333;
+  text-decoration: underline;
+  padding: 0; }
 
 .landing-page {
   background: #fff;

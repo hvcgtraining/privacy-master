@@ -9,8 +9,7 @@ jQuery(function($){
     });
 
     $(".nav-box").click(function(e) {
-        e.stopPropagation(); // Ngan chan su kien click lan toa ra thang cha
-        // Ẩn het toan bo nhung thang khac
+        e.stopPropagation();
         var navsub = $(this).find(".sibar-menu-sub-1");
             
         if($(this).hasClass('selected') == false) {
