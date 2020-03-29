@@ -1,0 +1,49 @@
+#bg-form-air
+    .container
+        #form-airdrop-popup.p-3.py-5.bg-white
+            .row.m-0
+                .col-md-6
+                    .form-main-left
+                        .form-main-left_top.mb-2
+                            h2.form-main-left_top_title How to join 
+                            ol.py-2.px-4.m-0
+                                li.my-2 Add DRK Chain into Metamask extensions.
+                                    a(href="#") How to do? 
+                                li.my-2  Follow our 
+                                    a(href="#") Telegram Channel
+                                li.my-2  Follow us on 
+                                    a(href="#") Twitter
+                                    | and retweet any post
+                                li.my-2  Fill the form below
+                        .form-main-left-bottom
+                            .note_form.px-2
+                                p 
+                                    strong Please note:
+                                    |  you must register with your real account and follow all of our media channels until the DRK coins are distributed. For any questions please send us an email via 
+                                    a(href="#") contact@draken.tech
+                            .img-air-popup.d-flex.justify-content-end.px-4.my-4
+                                img(src="../../dist/assets/airpopup.png")
+                .col-md-6 
+                    .form-main-right
+                        span.form-main-right_title * Please provide this information
+                        #form-infomation-air.my-3
+                            .row
+                                .col-lg-6.mb-3
+                                    input(type="text" name="fistname" placeholder="First Name*")
+                                .col-lg-6.mb-3
+                                    input(type="text" name="lastname" placeholder="Last Name*")
+                                .col-12.mb-3
+                                    input(type="text" name="country" placeholder="Country")
+                                .col-lg-6.mb-3
+                                    input(type="email" name="email" placeholder="Email")
+                                .col-lg-6.mb-3
+                                    input(type="text" name="twitterUsername" placeholder="Twitter username")
+                                .col-12.mb-3
+                                    input(type="text" name="telegramUsername" placeholder="Telegram username (without @)")
+                                .col-12.mb-3
+                                    textarea(name="WalletAddress", cols="20", rows="5" placeholder="DRK Wallet address*")
+                            .btn-submit-form-air.d-block.text-right
+                                button#btn-sub-popup(type="submit") SUBMIT
+#submit-success.py-4.px-3
+    p.my-3 The form was submitted succesfully.
+    button#btn-ok OK

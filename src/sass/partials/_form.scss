@@ -65,11 +65,156 @@
         }
     }
 }
-
+.bg-form-air{
+    background: #374049;
+}
+#bg-form-air{
+    width: 100%;
+    height: 100%;
+    background: #374049;
+    padding: 30px 0;
+}
+#form-airdrop-popup{
+    h2{
+        font-size: 18px;
+        color: #333;
+    }
+    li{
+        font-size: 15px;
+        color: #333;
+        a{
+            font-size: 15px;
+            margin: 0 2px;
+        }
+    }
+    .form-main-left-bottom{
+        .img-air-popup{
+            overflow: hidden;
+        }
+        .note_form{
+            position: relative;
+            &:before{
+                content: '';
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #B27D45;
+            }
+            p{
+                color: #333;
+                font-style: italic;
+            }
+            a{  
+                margin: 0 3px;
+                text-decoration: underline;
+                color: #333;
+                transition: all .3s ease;
+                &:hover,&:active{
+                    color: #555;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+    .form-main-right_title{
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        font-style: italic;
+        color: #666;
+    }
+    #form-infomation-air{
+        textarea,input{
+            width: 100%;
+            background: #b27d4526;
+            border: none;
+            padding: 10px 15px;
+            
+        }
+        ::placeholder{
+            color: #B27D45;
+            opacity: 1;
+        }
+    }
+    .btn-submit-form-air{
+        button{
+            background-color: #305F66;
+            color: #fff;
+            padding: 8px 30px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: rgb(59, 117, 126);
+                transition: all .3s ease;
+            }
+            &:active{
+                background-color: rgb(37, 73, 78);
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .form-main-left{
+        // background-image: url(../../dist/assets/airpopup.png);
+        position: relative;
+        .img-air-popup{
+            // display: none !important;
+            opacity: 0.3;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: fit-content;
+            height: 150px;
+        }
+    }
+    .form-main-right{
+        margin-top: 50px;
+        input,textarea{
+            font-size: 13px;
+        }
+        .btn-submit-form-air{
+            button{
+                font-size: 13px;
+            }
+        }
+    }
+}
 @media only screen and (max-width:576px){
     #formValidator{
         width: 320px !important;
         padding: 30px 15px;
         font-size: 13px;
+    }
+}
+#submit-success{
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;
+    width: 320px;
+    p{
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+    }
+    #btn-ok{
+            background-color: #305F66;
+            color: #fff;
+            padding: 8px 40px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: rgb(59, 117, 126);
+                transition: all .3s ease;
+            }
+            &:active{
+                background-color: rgb(37, 73, 78);
+                transition: all .3s ease;
+            }
     }
 }

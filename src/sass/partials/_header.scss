@@ -41,6 +41,7 @@
     .menu-main-item{
         padding: 5px 20px;
         position: relative;
+        z-index: 1;
         .menu-main-item-content{
             display: flex;
         }
